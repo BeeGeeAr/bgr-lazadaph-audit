@@ -1,39 +1,66 @@
 # 📦 BGR | LazadaPH Order Audit
 
-Audit your Lazada Philippines order history straight from your browser. View grand totals, breakdown by order status, and export all to CSV.
+**Compiled by BeeGeeAr | Powered by caffeine and shopping regrets.**
+
+This tool audits your Lazada PH order history — tallying every visible item, subtotaling by order status, and exporting to CSV.  
+Inspired by [`MyLazadaTotal`](https://github.com/limkokhole/MyLazadaTotal) by [@limkokhole](https://github.com/limkokhole).
 
 ---
 
-## ✨ Features
-- ✅ Scrapes **all pages** from your Lazada order history
-- 🧾 Tracks each order’s **item, quantity, price, and status**
-- 💰 Calculates **total spent + per-status subtotal**
-- 📄 One-click **CSV download**
-- 💡 Powered by: caffeine + shopping regrets
-- 🔗 Inspired by: [MyLazadaTotal](https://github.com/limkokhole/MyLazadaTotal)
+## 🚀 Features
+
+- 🧾 Calculates total spent based on visible Lazada orders
+- 📌 Subtotals by order status (Delivered, Received, etc.)
+- 📦 Shows item name, quantity, and cost per item
+- 🧃 CSV export for budgeting or shame journaling
+- 🛠️ Works across **multiple pages**
+- 👁️ No login credentials needed — runs entirely in browser
+- 💻 No install needed — just use the bookmarklet
 
 ---
 
-## 🧪 How to Use (Bookmarklet)
+## 🔖 How to Use (Bookmarklet)
 
-1. Copy the bookmarklet code below
-2. Add a new bookmark in your browser
-   - Name: `BGR LazadaPH Audit`
-   - URL: paste the code below
-3. Go to `https://my.lazada.com.ph/customer/order/index/`
-4. Click the bookmark to launch the audit
+1. Visit your Lazada order history:  
+   👉 [`https://my.lazada.com.ph/customer/order/index/`](https://my.lazada.com.ph/customer/order/index/)
 
-### 🔖 Bookmarklet Code (preview):
-```
-javascript:(async function(){(async function () { const delay = ms => new Promise(res => setTimeout(... (truncated)
-```
-> Full code available in `bgr-lazadaph-audit.min.js`
+2. Drag the link below to your bookmarks bar:
+
+**➡️ [BGR LazadaPH Order Audit](javascript:(function(){var s=document.createElement('script');s.src='https://beegeear.github.io/bgr-lazadaph-audit/bgr-lazadaph-audit.min.js';document.body.appendChild(s);})());**
+
+3. Click the bookmark while you're on the Lazada orders page.
+4. Wait for the tool to scan all your order pages.
+5. Review the grand total, subtotals by status, and click **Download CSV** if needed.
 
 ---
 
-## 🗂️ Files
+## 📁 Files
 
-- `bgr-lazadaph-audit.js` — readable full source with comments
-- `bgr-lazadaph-audit.min.js` — minified version for bookmarklet use
-- `README.md` — usage guide
+| File                            | Description                         |
+|---------------------------------|-------------------------------------|
+| `bgr-lazadaph-audit.js`         | Full readable version (dev/debug)   |
+| `bgr-lazadaph-audit.min.js`     | Minified version (for bookmarklet)  |
+| `README.md`                     | You're reading this                 |
 
+---
+
+## 🙌 Credits
+
+- 📌 Inspired by [`MyLazadaTotal`](https://github.com/limkokhole/MyLazadaTotal) by [@limkokhole](https://github.com/limkokhole)
+- 🛠️ Refactored & PH-customized by [@BeeGeeAr](https://github.com/BeeGeeAr)
+
+---
+
+## 🧠 Future Plans
+
+- Add delivery dates by crawling per order page
+- Add filters (date range, total per month)
+- Add dashboard to track spending per shop
+- Package as Chrome extension
+
+---
+
+**📬 Questions, issues, or feature requests?**  
+Create a GitHub Issue or message BeeGeeAr (Bonna Gajo Reñosa) directly.
+
+---
