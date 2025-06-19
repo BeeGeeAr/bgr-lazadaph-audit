@@ -24,9 +24,14 @@ Inspired by [`MyLazadaTotal`](https://github.com/limkokhole/MyLazadaTotal) by [@
 1. Visit your Lazada order history:  
    👉 [`https://my.lazada.com.ph/customer/order/index/`](https://my.lazada.com.ph/customer/order/index/)
 
-2. Drag the link below to your bookmarks bar:
+2. **Create a new bookmark manually**:
+   - Right-click your bookmarks bar → "Add page" / "Add bookmark"
+   - Name: `BGR LazadaPH Order Audit`
+   - Paste the following code as the URL:
 
-**➡️ [BGR LazadaPH Order Audit](javascript:(function(){var s=document.createElement('script');s.src='https://beegeear.github.io/bgr-lazadaph-audit/bgr-lazadaph-audit.min.js';document.body.appendChild(s);})());**
+```javascript
+javascript:(function(){var s=document.createElement('script');s.src='https://beegeear.github.io/bgr-lazadaph-audit/bgr-lazadaph-audit.min.js';document.body.appendChild(s);})()
+```
 
 3. Click the bookmark while you're on the Lazada orders page.
 4. Wait for the tool to scan all your order pages.
