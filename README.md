@@ -18,7 +18,7 @@ Audit your Lazada Philippines order history straight from your browser. View gra
 
 1. Copy the bookmarklet code below
 2. Add a new bookmark in your browser
-   - Name: `BGR Lazada Audit`
+   - Name: `BGR LazadaPH Audit`
    - URL: paste the code below
 3. Go to `https://my.lazada.com.ph/customer/order/index/`
 4. Click the bookmark to launch the audit
