@@ -78,12 +78,14 @@
             statusTotals[statKey] += total;
 
             const line = document.createElement("p");
-            line.innerText = `[ ₱${total.toFixed(2)} ] — ${title} (${quantity}) [${statKey}]`;
+            line.innerText = `[ ₱${total.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+                } ] — ${title} (${quantity}) [${statKey}]`;
             container.appendChild(line);
         });
 
         const finalTotal = document.createElement("p");
-        finalTotal.innerText = `💰 Grand Total: ₱${grandTotal.toFixed(2)}`;
+        finalTotal.innerText = `💰 Grand Total: ₱${grandTotal.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+            }`;
         finalTotal.style.marginTop = "20px";
         finalTotal.style.fontWeight = "bold";
         finalTotal.style.fontSize = "16px";
@@ -96,7 +98,8 @@
 
         Object.entries(statusTotals).forEach(([stat, total]) => {
             const line = document.createElement("p");
-            line.innerText = `• ${stat}: ₱${total.toFixed(2)}`;
+            line.innerText = `• ${stat}: ₱${total.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+                }`;
             container.appendChild(line);
         });
 
@@ -126,7 +129,8 @@
                 csvRows.push([
                     `"${title}"`,
                     quantity,
-                    total.toFixed(2),
+                    total.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+                    ,
                     `"${status}"`
                 ]);
             });
