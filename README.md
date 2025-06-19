@@ -14,6 +14,7 @@ Inspired by [`MyLazadaTotal`](https://github.com/limkokhole/MyLazadaTotal) by [@
 - 📦 Shows item name, quantity, and cost per item
 - 🧃 CSV export for budgeting or shame journaling
 - 🛠️ Works across **multiple pages**
+- 💰 Adds **comma formatting for thousands**
 - 👁️ No login credentials needed — runs entirely in browser
 - 💻 No install needed — just use the bookmarklet
 
@@ -30,7 +31,7 @@ Inspired by [`MyLazadaTotal`](https://github.com/limkokhole/MyLazadaTotal) by [@
    - Paste the following code as the URL:
 
 ```javascript
-javascript:(function(){var s=document.createElement('script');s.src='https://beegeear.github.io/bgr-lazadaph-audit/bgr-lazadaph-audit.min.js';document.body.appendChild(s);})()
+javascript:(function(){var s=document.createElement('script');s.src='https://beegeear.github.io/bgr-lazadaph-audit/bgr-lazadaph-audit.v1.1.min.js';document.body.appendChild(s);})()
 ```
 
 3. Click the bookmark while you're on the Lazada orders page.
@@ -41,11 +42,11 @@ javascript:(function(){var s=document.createElement('script');s.src='https://bee
 
 ## 📁 Files
 
-| File                            | Description                         |
-|---------------------------------|-------------------------------------|
-| `bgr-lazadaph-audit.js`         | Full readable version (dev/debug)   |
-| `bgr-lazadaph-audit.min.js`     | Minified version (for bookmarklet)  |
-| `README.md`                     | You're reading this                 |
+| File                              | Description                            |
+|-----------------------------------|----------------------------------------|
+| `bgr-lazadaph-audit.js`           | Full readable version (dev/debug)      |
+| `bgr-lazadaph-audit.v1.1.min.js`  | **Latest minified version** (bookmarklet) |
+| `README.md`                       | You're reading this                    |
 
 ---
 
